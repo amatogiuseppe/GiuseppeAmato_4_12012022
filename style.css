@@ -14,7 +14,6 @@ button {
 }
 
 a:hover {
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -64,35 +63,15 @@ a:hover {
 .bg-tl-edge,
 .bg-bl-edge,
 .bg-tr-edge,
-.bg-br-edge,
-.bg-repeat {
+.bg-br-edge {
     -webkit-background-size: auto!important;
     -moz-background-size: auto!important;
     -o-background-size: auto!important;
     background-size: auto!important;
 }
 
-.bg-repeat {
-    background: repeat;
-}
-
 .bg-t-edge {
     background: top no-repeat;
-}
-
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -123,7 +102,6 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -415,6 +393,10 @@ a:hover {
     padding: 14px 15px;
 }
 
+.site-navigation li a:hover {
+    background-color: #f3976c;
+}
+
 nav .caret {
     margin: 0 5px;
 }
@@ -439,6 +421,11 @@ nav .caret {
     border-bottom-color: transparent;
     margin: 6px -5px 0 0!important;
     float: right;
+}
+
+.main-logo {
+    border: 2px solid white;
+    border-radius: 50%;
 }
 
 .mg-md {
@@ -658,7 +645,15 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #303030!important;
+}
+
+#contact-info {
+    color: #303030;
+    padding-top: 20px;
+}
+#contact-info a {
+    text-decoration: underline;
 }
 
 .container {
@@ -684,7 +679,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -714,6 +709,10 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+}
+
+.title-28 {
+    font-size:28px;
 }
 
 h3 {
@@ -760,7 +759,8 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
     padding: 40px 40px 40px 40px;
 }
 
@@ -782,12 +782,12 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFF!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #303030!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -816,16 +816,8 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
