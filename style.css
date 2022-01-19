@@ -321,6 +321,35 @@ a:hover {
     background: transparent;
 }
 
+button:focus,
+.nav li a:focus,
+a:focus {
+    position: relative;
+}
+
+button:focus::after,
+.nav li a:focus::after,
+a:focus::after {
+    content: "";    
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;    
+    border: 2px solid black;
+}
+#bloc-1-hero a:focus::after,
+#bloc-5-cta a:focus::after {
+    border: 3px solid white;
+    border-radius: 25px;
+}
+.social a:focus::after {
+    top: -10px;
+    border: 3px solid white;
+}
+
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
