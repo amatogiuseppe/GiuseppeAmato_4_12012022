@@ -641,6 +641,11 @@ a[data-lightbox]:hover img {
     z-index: 1;
     opacity: 0.4;
 }
+.close-lightbox:focus,
+.prev-lightbox:focus,
+.next-lightbox:focus {
+    position: absolute;
+}
 
 .next-lightbox {
     padding: 6px 8px 1px 13px;
